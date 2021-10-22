@@ -1,7 +1,7 @@
 FUNCTION mtgrf,te,logg,feh
 ;+
 ; NAME:
-;       MTGRF (VER. 1.2); 
+;       MTGRF (VER. 1.3); 
 ; PURPOSE:
 ;       This raw function DOES NOT INCLUDE ERROR CHECKING and was created for use 
 ;       only by MTGR and MTGRFUNC. Please use MTGRFUNC instead of this function!
@@ -16,7 +16,7 @@ ENDIF ELSE BEGIN
    IF feh GE -0.4 AND feh LE 0.7 THEN BEGIN 
       a=0.037539*feh^2.+0.106185*feh+0.760313
       b=-0.074620*feh^3.-0.035236*feh^2.+0.139705*feh+0.397282
-      c=0.122190*feh^3.-0.001445*feh^2.-0.387297*feh+0.645036
+      c=0.122190*feh^3.+0.001445*feh^2.-0.387297*feh+0.645036
       d=0.017391*feh^3.-0.015925*feh^2.+ 0.021622*feh-0.205739
       e=-0.167246*feh-0.191036
    ENDIF ELSE BEGIN
