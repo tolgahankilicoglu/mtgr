@@ -1,7 +1,7 @@
 PRO mtgr,teff,logg,feh=feh,alfe=alfe,eteff=eteff,elogg=elogg,efeh=efeh,ealfe=ealfe,extrapolate=extrapolate,silent=silent
 ;+
 ; NAME:
-;       MTGR (VER. 1.2)
+;       MTGR (VER. 1.3)
 ; PURPOSE:
 ;       MTGR calculates the mass of intermediate-mass main-sequence stars
 ;       from their effective temperature and surface gravity.
@@ -9,7 +9,7 @@ PRO mtgr,teff,logg,feh=feh,alfe=alfe,eteff=eteff,elogg=elogg,efeh=efeh,ealfe=eal
 ; SCIENTIFIC BASE:
 ;       This calibration is based on the Mass - Effective Temperature - 
 ;       Surface Gravity Relation (MTGR) developed in Kilicoglu, T. 2021, 
-;       Astronomy & Astrophysics, ###, #.
+;       Astronomy & Astrophysics, 655, A91.
 ;
 ; CALLING SEQUENCE:
 ;       MTGR, teff, logg, [feh=, eteff=, elogg=, efeh=, /EXTRAPOLATE, 
@@ -74,9 +74,10 @@ PRO mtgr,teff,logg,feh=feh,alfe=alfe,eteff=eteff,elogg=elogg,efeh=efeh,ealfe=eal
 ;       MTGRF()
 ;
 ; REVISION HISTORY:
-; VER 1.0:       Written                  T. Kilicoglu        June, 2021
+; VER 1.0:         Written                T. Kilicoglu        June, 2021
 ; VER 1.1: alpha abundances added         T. Kilicoglu      August, 2021  
 ; VER 1.2: corr. for the allowed ranges   T. Kilicoglu      August, 2021  
+; VER 1.3:     reference added            T. Kilicoglu    December, 2021
 ;
 ; CONTACT:
 ;       tkilicoglu@ankara.edu.tr
